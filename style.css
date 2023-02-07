@@ -20,10 +20,18 @@ input{
 }
 
 
-form.reprovado{
+.reprovado{
     box-shadow: 4px 4px 8px #f009;
 }
 
-form.aprovado{
+.aprovado{
     box-shadow: 4px 4px 8px teal;
+}
+
+.notaAzul{
+    color: teal;
+}
+
+.notaVermelha{
+   color: red;
 }

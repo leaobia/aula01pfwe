@@ -17,28 +17,45 @@ const nota1 = document.getElementById('nota1').value
 const nota2 = document.getElementById('nota2').value
 const teste = document.getElementById('teste')
 
-function somar(){
+function somar() {
     const nota1 = document.getElementById('nota1').value
     const nota2 = document.getElementById('nota2').value
+    const formulario = document.getElementById('formulario')
 
     const resultado = (Number(nota1) + Number(nota2)) / 2
 
+    const inputNota1 = document.getElementById('nota1')
+    const inputNota2 = document.getElementById('nota2')
+
     document.getElementById('situacao').value = resultado
 
-    console.log(resultado)
 
-    if(resultado >= 5){
+
+
+    if (nota1 >= 5) {
+        inputNota1.classList.add('notaAzul')
+        inputNota1.classList.remove('notaVermelha')
+    } else {
+        inputNota1.classList.remove('notaAzul')
+        inputNota1.classList.add('notaVermelha')
+    }
+    if (nota2 >= 5) {
+        inputNota2.classList.add('notaAzul')
+        inputNota2.classList.remove('notaVermelha')
+    } else {
+        inputNota2.classList.remove('notaAzul')
+        inputNota2.classList.add('notaVermelha')
+    }
+
+    if (resultado >= 5) {
         document.getElementById('situacao').value = 'Aprovado!'
-        this.classList.toggle('aprovado')
-        formulario.classList.toggle('aprovado')
+        formulario.classList.add('aprovado')
         formulario.classList.remove('reprovado')
-    }else{
+    } else {
         document.getElementById('situacao').value = 'Repetiu!'
-        this.classList.toggle('reprovado')
-        formulario.classList.toggle('reprovado')
+        formulario.classList.add('reprovado')
         formulario.classList.remove('aprovado')
     }
-    
 }
 
 
