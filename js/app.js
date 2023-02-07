@@ -26,6 +26,7 @@ function somar() {
 
     const inputNota1 = document.getElementById('nota1')
     const inputNota2 = document.getElementById('nota2')
+    const inputSituacao = document.getElementById('situacao')
 
     document.getElementById('situacao').value = resultado
 
@@ -47,10 +48,14 @@ function somar() {
 
     if (resultado >= 5) {
         document.getElementById('situacao').value = 'Aprovado!'
+        inputSituacao.classList.add('notaAzul')
+        inputSituacao.classList.remove('notaVermelha')
         formulario.classList.add('aprovado')
         formulario.classList.remove('reprovado')
     } else {
         document.getElementById('situacao').value = 'Reprovado!'
+        inputSituacao.classList.add('notaVermelha')
+        inputSituacao.classList.remove('notaAzul')
         formulario.classList.add('reprovado')
         formulario.classList.remove('aprovado')
     }
