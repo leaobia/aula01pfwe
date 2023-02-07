@@ -30,8 +30,6 @@ function somar() {
     document.getElementById('situacao').value = resultado
 
 
-
-
     if (nota1 >= 5) {
         inputNota1.classList.add('notaAzul')
         inputNota1.classList.remove('notaVermelha')
@@ -52,7 +50,7 @@ function somar() {
         formulario.classList.add('aprovado')
         formulario.classList.remove('reprovado')
     } else {
-        document.getElementById('situacao').value = 'Repetiu!'
+        document.getElementById('situacao').value = 'Reprovado!'
         formulario.classList.add('reprovado')
         formulario.classList.remove('aprovado')
     }
