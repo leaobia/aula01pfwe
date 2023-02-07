@@ -11,8 +11,8 @@ body{
     place-content: center;
 }
 form{
-    height: 50vh;
-    width: 35vw;
+    height: 60vh;
+    width: 50vw;
     margin: auto;
     display: flex;
     flex-direction: column;
