@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 1rem;
+    
 }
 
 body{
@@ -19,11 +19,14 @@ form{
     align-items: center;
     box-shadow: 4px 4px 8px #0009;
     justify-content: space-evenly;
+    
 }
 
 input{
     width: 80%;
     outline: none;
+    font-size: clamp(.4em, .4em + 2vw, 2em);
+   
 }
 
 
@@ -46,8 +49,12 @@ input{
 button{
     cursor: pointer;
     padding: 4px;
+    font-size: clamp(.4em, .4em + 2vw, 2em);
 }
 
+label{
+    font-size: clamp(.4em, .4em + 2vw, 2em);
+}
 #situacao{
     text-align: center;
 }
