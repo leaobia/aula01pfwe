@@ -29,7 +29,7 @@ function somar() {
     } else if (
         nota1 > 10 || nota2 > 10 || nota1 < 0 || nota2 < 0
     ) {
-        document.getElementById('situacao').value = 'Notas só até 10!'
+        document.getElementById('situacao').value = 'Notas de 0 a 10!'
     }
 
     else {
